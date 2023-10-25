@@ -125,7 +125,7 @@ class TicketSerializer(serializers.ModelSerializer):
 
 
 class TicketListSerializer(TicketSerializer):
-    movie_session = PerformanceListSerializer(many=False, read_only=True)
+    performance = PerformanceListSerializer(many=False, read_only=True)
 
 
 class TicketSeatsSerializer(TicketSerializer):
