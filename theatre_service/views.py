@@ -198,7 +198,7 @@ class PerformanceViewSet(viewsets.ModelViewSet):
             OpenApiParameter(
                 "play",
                 type=OpenApiTypes.INT,
-                description="Filter by movie id (ex. ?play=2)",
+                description="Filter by play id (ex. ?play=2)",
             ),
             OpenApiParameter(
                 "date",
