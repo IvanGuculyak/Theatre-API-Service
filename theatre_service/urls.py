@@ -20,8 +20,6 @@ router.register("plays", PlayViewSet)
 router.register("performance", PerformanceViewSet)
 router.register("reservation", ReservationViewSet)
 
-urlpatterns = [
-    path("", include(router.urls)),
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+urlpatterns = router.urls + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 app_name = "theatre_service"
